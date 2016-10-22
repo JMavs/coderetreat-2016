@@ -13,6 +13,8 @@ class MyClass:
 
     def get_neighbours(self, x, y):
         def distance(pos1x, pos1y, pos2x, pos2y):
+            if (pos1x-pos2x == 0 and pos1y-pos2y == 0):
+                return False
             if (abs(pos1x-pos2x) <= 1 and abs(pos1y-pos2y)<= 1):
                 return True
             else:

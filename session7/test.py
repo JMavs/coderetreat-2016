@@ -20,3 +20,4 @@ def test_count_neighbours():
     t1.array[1][0] = 1
 
     assert (t1.get_neighbours(0,1) == 2)
+    assert (t1.get_neighbours(1,0) == 1)
