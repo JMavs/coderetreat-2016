@@ -5,4 +5,4 @@ def test_cells_created():
     t1.array[0][0] = 1
     t1.array[1][0] = 1
 
-    assertTrue(t1.array[0][0]==1)
+    assert (t1.array[0][0]==1)
