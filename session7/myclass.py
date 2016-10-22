@@ -1,4 +1,5 @@
 import math
+import copy
 class MyClass:
     def __init__(self, fila, columna):
         self.array = []
@@ -27,3 +28,18 @@ class MyClass:
                     if self.array[i][j] == 1:
                         contador+=1
         return contador
+    def clone_array(self, array):
+        return copy.copy(array)
+
+    def next_iteration(self):
+        copy_array = clone_array(self.array)
+        for i in range(len(self.array)):
+            for j in range(len(self.array[0])):
+                if get_neighbours(i,j) < 2:
+                    #muere
+                elif get_neighbours(i,j) > 3:
+                    #muere
+                elif get_neighbours(i,j) == 3:
+                    #se crea o vive
+        if (copy_array[x][y] == 0 && self.get_neighbours[x][y] == 2):
+            copy_array[x][y] = 1
