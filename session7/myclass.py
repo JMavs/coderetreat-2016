@@ -6,3 +6,6 @@ class MyClass:
             for j in range(columna):
                 self.temp.append(0)
             self.array.append(self.temp)
+
+    def count_cells(self):
+       return  str(self.array).count('1')
